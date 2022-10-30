@@ -2,7 +2,7 @@
   "name": "proyecto-plataforma",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gasparu.github.io/portafolio/",
+  "homepage": "https://gasparu.github.io/inicio/",
   "dependencies": {
     "@mui/icons-material": "^5.1.1",
     "@testing-library/jest-dom": "^5.15.0",
