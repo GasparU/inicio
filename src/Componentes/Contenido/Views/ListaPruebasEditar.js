@@ -13,7 +13,9 @@ export default function ListaPruebasEditar() {
     }
   };
 
-  useEffect(() => {getPruebas()}, []);
+  useEffect(() => {
+    getPruebas();
+  }, []);
 
   return (
     <div>
@@ -29,12 +31,18 @@ export default function ListaPruebasEditar() {
         <tbody className="tbody">
           {pruebas.map(({ Prueba, Tiempo, Tipo }, i) => (
             <tr key={i}>
-              
-              <td className="boditablalistapruebas"><input className="form-check-input espacioprueba" type="checkbox" value="" id="flexCheckDefault"/> {Prueba}</td>
+              <td className="boditablalistapruebas">
+                <input
+                  className="form-check-input espacioprueba"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />{" "}
+                {Prueba}
+              </td>
               <td className="boditablalistapruebas">{Tiempo}</td>
               <td className="boditablalistapruebas">{Tipo}</td>
               <td className="boditablalistapruebas">Eliminar</td>
-             
             </tr>
           ))}
         </tbody>

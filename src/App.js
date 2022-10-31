@@ -17,6 +17,7 @@ import EnviosView from "./Componentes/Contenido/Views/EnviosView";
 import EditProcesoForm from "./Componentes/Contenido/Envios/EditProcesoForm";
 import EvaluadosView from "./Componentes/Contenido/Views/EvaluadosView";
 import EditEvaluado from "./Componentes/Contenido/Envios/EditEvaluado";
+import CheckOutView from "./Componentes/Context/CheckOutView";
 
 function App() {
   return (
@@ -31,6 +32,15 @@ function App() {
               <Route path="/inicio" element={<Intro />} />
 
               <Route path="/login" element={<LoginView />} />
+
+              <Route
+                path="/login"
+                element={
+                  <PrivateRoute>
+                    <CheckOutView />
+                  </PrivateRoute>
+                }
+              />
 
               <Route
                 path="/bienvenida"

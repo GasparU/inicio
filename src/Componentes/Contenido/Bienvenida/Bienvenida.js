@@ -13,7 +13,11 @@ export default function Bienvenida() {
           de puesto a evaluar.
         </div>
         <div className="col-1"></div>
-        <img className="imagen col-3" src={imagenes.img1} />
+        <img
+          className="imagen col-3"
+          src={imagenes.img1}
+          alt="imagen portada"
+        />
         <div className="col-1"></div>
       </div>
     </div>

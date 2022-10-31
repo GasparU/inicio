@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import Situacion from "../Perfiles/Tabla/Situacion";
 import { LinkPruebas } from "../Services/LinkPruebas";
 import ModalTest from "../Perfiles/Tabla/ModalTest";
@@ -51,8 +50,8 @@ export default function ListaPruebas() {
               <td>
                 <ModalTest />
               </td>
-              <td >{Prueba}</td>
-              <td >{Tipo}</td>
+              <td>{Prueba}</td>
+              <td>{Tipo}</td>
               <td className="iconsubir">{iconSubir}</td>
             </tr>
           ))}

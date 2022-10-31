@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav, NavLink } from "react-bootstrap";
-import { Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./authContext";
 
@@ -8,17 +8,19 @@ export default function Navegacion() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand>LOGO AGM</Navbar.Brand>   
-        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Brand>LOGO AGM</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Link className="nav-link" to="/bienvenida">
-                    Navegar
-                </Link>
-            </Nav>
-            <Nav>
-                <NavLink>Salir</NavLink>
-            </Nav>
+          <Nav className="me-auto">
+            <Link className="nav-link" to="/bienvenida">
+              NAVEGAR
+            </Link>
+          </Nav>
+          <Nav>
+            <NavLink onClick={signOut} className="nav-link ">
+              SALIR
+            </NavLink>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
